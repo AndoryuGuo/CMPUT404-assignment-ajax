@@ -70,7 +70,7 @@ function drawCircle(context,entity) {
         //moveTo(x,y);
         fillStyle = entity["colour"];
         strokeStyle = fillStyle;
-        arc(x, y, (entity["radius"])?entity["radius"]:10, 0, 2.0 * Math.PI, false);  
+        arc(x, y, (entity["radius"])?entity["radius"]:40, 0, 2.0 * Math.PI, false);  
         stroke();                                
     }
 }
@@ -266,6 +266,7 @@ mouse.mousedraggers.push(function(x,y,clicked,e) {
     addEntityWithoutName({'x':x,'y':y,'colour': '#D2BFF2',
                           'radius':5});
 });
+
 
 
 function update() {

@@ -44,7 +44,7 @@ class World:
 
     def set(self, entity, data):
         self.space[entity] = data
-
+        
     def clear(self):
         self.space = dict()
 
